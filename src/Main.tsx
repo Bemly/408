@@ -11,11 +11,11 @@ export {TOTAL};
 const STOPS: [number, string][] = ACT_RANGES.map((a) => [a.s, a.color]);
 const HUD_ACTS = ACT_RANGES.slice(1, 5).map((a) => ({s: a.s, e: a.e}));
 
-export const Main: React.FC<{mute?: boolean}> = ({mute}) => (
+export const Main: React.FC<{mute?: boolean; musicSrc?: string}> = ({mute, musicSrc}) => (
   <AbsoluteFill style={{background: COL.bg}}>
     <Background stops={STOPS} total={TOTAL} />
     <Shots shots={SHOTS} />
     <ActHUD acts={HUD_ACTS} />
-    {!mute && <Audio src={staticFile('music2.wav')} />}
+    {!mute && <Audio src={musicSrc ?? staticFile('music2.wav')} />}
   </AbsoluteFill>
 );

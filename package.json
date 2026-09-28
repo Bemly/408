@@ -5,6 +5,7 @@
   "scripts": {
     "studio": "remotion studio",
     "render": "remotion render MV408 out/408_MV.mp4",
+    "audio:mp3": "ffmpeg -hide_banner -loglevel error -y -i public/music2.wav -codec:a libmp3lame -b:a 128k -ar 48000 -joint_stereo 1 public/music2.mp3",
     "web:dev": "vite",
     "web:build": "vite build",
     "web:preview": "vite preview"
