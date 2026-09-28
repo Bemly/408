@@ -3,6 +3,16 @@
 408 计算机考研四门课（数据结构 / 组成原理 / 操作系统 / 计网）的 Remotion 动画 MV 工程。
 1920×1080 / 60fps，时间轴驱动，一套代码同时出「渲染成片」和「网页实时版」。
 
+## 效果预览
+
+| 开场 | 数据结构 · Dijkstra | 组成原理 · Cache 映射 |
+|---|---|---|
+| ![开场](docs/screenshots/00-intro.jpg) | ![Dijkstra](docs/screenshots/01-ds-dijkstra.jpg) | ![Cache映射](docs/screenshots/02-co-cache.jpg) |
+
+| 操作系统 · 页面置换 | 计网 · 数据报分片 | 结尾 · 四科星系 |
+|---|---|---|
+| ![页面置换](docs/screenshots/03-os-paging.jpg) | ![数据报分片](docs/screenshots/04-cn-frag.jpg) | ![结尾](docs/screenshots/05-finale.jpg) |
+
 ## 内容结构
 
 - `intro`：开场 + 星系 люд
