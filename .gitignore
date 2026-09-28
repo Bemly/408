@@ -23,6 +23,9 @@ versions/**/*.mov
 .remotion/
 .turbo/
 
+# 网页版构建产物（只推 gh-pages 分支，不进 main）
+dist/
+
 # 保留：public/fonts/ (最大24M，需随仓库分发渲染用)
 # 保留：audio/*.py, *.json, *.npy (均<100K，可再生音频)
 # 保留：versions/v1/src/, *.py (小文件代码)

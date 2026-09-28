@@ -4,13 +4,17 @@
   "private": true,
   "scripts": {
     "studio": "remotion studio",
-    "render": "remotion render MV408 out/408_MV.mp4"
+    "render": "remotion render MV408 out/408_MV.mp4",
+    "web:dev": "vite",
+    "web:build": "vite build",
+    "web:preview": "vite preview"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.529",
     "@remotion/google-fonts": "^4.0.529",
     "@remotion/noise": "^4.0.529",
     "@remotion/paths": "^4.0.529",
+    "@remotion/player": "^4.0.529",
     "@remotion/transitions": "^4.0.529",
     "d3-geo": "^3.1.1",
     "react": "^19.3.0",
@@ -23,7 +27,9 @@
     "@types/d3-geo": "^3.1.1",
     "@types/react": "^19.3.0",
     "@types/topojson-client": "^3.1.5",
-    "typescript": "^7.0.2"
+    "@vitejs/plugin-react": "^6.1.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.1"
   },
   "allowScripts": {
     "esbuild@0.28.1": true
