@@ -2,7 +2,7 @@ import {defineConfig} from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/408/',
+  base: './',
   publicDir: 'web-public',
   plugins: [react()],
   build: {
